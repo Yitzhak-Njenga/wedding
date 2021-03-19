@@ -674,7 +674,7 @@ pre {
   user-select: none;
   pointer-events: none;
   -webkit-user-drag: none;
-  user-drag: none;
+  /* -user-drag: none; */
 }
 .mbr-section__comments .row {
   justify-content: center;
@@ -1338,9 +1338,98 @@ body {
   height: auto;
   min-height: 100vh;
 }
+.media-container-column, h3{
+  color: #0b566f;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+            animation: heartbeat 1.5s ease-in-out infinite both;
+  
+}
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
 .cid-qwTCuJooM6 {
-  background-image: url("../../../assets/images/cyrus.jpg");
-  background-size:inherit;
+  
+  background-image: url("../../../assets/images/cryrus.jpg");
+  background-size: 80% ;
+}
+@media (max-width: 400px){
+  .cid-qwTCuJooM6 {
+  background-image: url("../../../assets/images/IMG-20210316-WA0020.jpg");
+  background-size: cover;
+  }
+  .media-container-column, h3{
+    color: #ffffff;
+  }
+  #location{
+    max-width: 200px;
+  }
+
 }
 .cid-qwTCuJooM6 .mbr-section-subtitle {
   font-style: italic;
@@ -1368,7 +1457,9 @@ body {
 @media (min-width: 992px) {
   .cid-qwTDXa80kH .mbr-figure {
     padding-right: 4rem;
+    
   }
+ 
 }
 @media (max-width: 991px) {
   .cid-qwTDXa80kH .mbr-figure {
@@ -1449,6 +1540,9 @@ body {
   flex-direction: row;
   -webkit-flex-direction: row;
 }
+/* location */
+
+
 .cid-qwTIrrJuXL .timeline-element:hover .mbr-timeline-date {
   box-shadow: 0 7px 20px 0px rgba(0, 0, 0, 0.08);
   transition: all .4s;

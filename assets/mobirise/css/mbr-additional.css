@@ -1338,8 +1338,8 @@ body {
   height: auto;
   min-height: 100vh;
 }
-.media-container-column, h3{
-  color: #0b566f;
+#text{
+  color: #fa9c30;
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
             animation: heartbeat 1.5s ease-in-out infinite both;
   

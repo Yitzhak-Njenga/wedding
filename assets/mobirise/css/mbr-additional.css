@@ -1338,9 +1338,14 @@ body {
   height: auto;
   min-height: 100vh;
 }
+#footer{
+  height: 50px;
+  color: #000;
+}
 #text{
   color: #fa9c30;
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+   text-shadow: 0 0 5px rgb(255, 255, 255);
+  -webkit-animation: heargba(255, 255, 255, 0.5)e-in-out infinite both;
             animation: heartbeat 1.5s ease-in-out infinite both;
   
 }

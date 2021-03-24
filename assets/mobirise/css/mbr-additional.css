@@ -1343,7 +1343,7 @@ body {
   color: #000;
 }
 #text{
-  color: #ffffff;
+  color: #fa9c30;
    text-shadow: 0 0 5px rgb(255, 255, 255);
   -webkit-animation: heargba(255, 255, 255, 0.5)e-in-out infinite both;
             animation: heartbeat 1.5s ease-in-out infinite both;
@@ -1427,12 +1427,16 @@ body {
   .cid-qwTCuJooM6 {
   background-image: url("../../../assets/images/IMG-20210316-WA0020.jpg");
   background-size: cover;
+  
   }
   .media-container-column, h3{
     color: #ffffff;
   }
   #location{
     max-width: 400px;
+  }
+  #text{
+    color: #fff;
   }
 
 }
